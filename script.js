@@ -19,9 +19,8 @@ function updateCountdown() {
 function addToCalendar() {
     const event = {
         title: "40° Aniversario - Fredy & America Lopez",
-        location: "Salón Real, Ciudad de Guatemala",
-        start: "20241216T190000",
-        end: "20241217T000000"
+        start: "20241222T190000",
+        end: "20241222T000000"
     };
 
     window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&location=${encodeURIComponent(event.location)}&dates=${event.start}/${event.end}`, '_blank');
