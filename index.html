@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+    <!-- Meta tags optimizados para WhatsApp -->
+    <meta property="og:title" content="40° Aniversario - Fredy & America Lopez" />
+    <meta property="og:description" content="Celebra con nosotros nuestras Bodas de Rubí" />
+    <meta property="og:image" content="aniversario.jpeg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:type" content="website" />
+    
+    <title>40° Aniversario - Fredy & America Lopez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card">
+            <header>
+                <div class="main-image"></div>
+                <div class="header-content">
+                    <div class="rings-image"></div>
+                    <div class="anniversary-number">40</div>
+                    <h1 class="nombres">
+                        Fredy & America
+                        <span class="apellido">Lopéz</span>
+                    </h1>
+                    <div class="subtitle">Bodas de Rubí</div>
+                </div>
+            </header>
+
+            <div class="divider"></div>
+
+            <div class="message-section">
+                <p class="invitation-message">
+                    Con gratitud y alegría celebramos
+                    cuatro décadas de amor.
+                    Nos honraría compartir con nosotros
+                    este momento tan especial.
+                </p>
+            </div>
+
+            <div class="date-section">
+                <p class="date">Diciembre 22, 2024</p>
+                <p class="time">18:00 horas</p>
+                <div class="countdown" id="countdown"></div>
+            </div>
+
+            <div class="details">
+                <p>Ciudad de Guatemala</p>
+            </div>
+
+            <div class="action-buttons">
+                <button onclick="addToCalendar()" class="btn">
+                    Agregar al Calendario
+                </button>
+                <button onclick="openMap()" class="btn">
+                    Ver Ubicación
+                </button>
+                <button onclick="confirmAssistance()" class="btn">
+                    Confirmar Asistencia
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

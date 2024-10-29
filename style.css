@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #9B111E;
+    --gold: #D4AF37;
+    --text-dark: #1A1A1A;
+    --text-light: #4A4A4A;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./fondo2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.invitation-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    border-radius: 2px;
+    padding: 40px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.main-image {
+    width: 200%;
+    height: 250px;
+    background-image: url('aniversario.jpeg');
+    background-size: cover;
+    background-position: center;
+    Margin-bottom: 0;
+}
+
+.header-content {
+    position: relative;
+    padding-top: -50px;
+}
+
+.rings-image {
+    width: 420px;
+    height: 420px;
+    background-image: url('./anillos.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.anniversary-number {
+    font-size: 4rem;
+    color: var(--primary-color);
+    font-weight: 300;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.nombres {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    margin: 20px 0;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.apellido {
+    display: block;
+    font-size: 2.7rem;
+    color: var(--primary-color);
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.divider {
+    width: 70px;
+    height: 1px;
+    background: var(--gold);
+    margin: 30px auto;
+}
+
+.message-section {
+    margin: 48px 0;
+}
+
+.invitation-message {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.date-section {
+    margin: 40px 0;
+}
+
+.date {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 1.6rem;
+    color: var(--text-light);
+}
+
+.countdown {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-top: 20px;
+}
+
+.details {
+    margin: 40px 1;
+}
+
+.details h2 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 12px 30px;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width: 480px) {
+    .invitation-card {
+        padding: 20px;
+    }
+
+    .main-image {
+        height: 250px;
+    }
+
+    .nombres {
+        font-size: 2.2rem;
+    }
+
+    .apellido {
+        font-size: 1.8rem;
+    }
+
+    .invitation-message {
+        font-size: 1.2rem;
+    }
+    
+    .rings-image {
+        width: 150px;
+        height: 150px;
+    }
+}
